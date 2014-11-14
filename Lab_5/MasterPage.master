@@ -19,6 +19,9 @@
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+        <asp:SiteMapDataSource ID="SMS" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server" />
+        <asp:Menu DataSourceID="SMS" runat="server"/>
+        <asp:SiteMapPath PathSeparator="Boss" runat="server"/>
     </div>
     </form>
 </body>
