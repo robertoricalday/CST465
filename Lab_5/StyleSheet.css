@@ -1,0 +1,17 @@
+﻿h1 {
+    color: blue;
+    text-align: center;
+}
+
+body {
+    background-color: ButtonHighlight;
+}
+
+form > div > label {
+  font-weight:bold;
+}
+
+.fieldTitle
+{
+    font-weight:bold;
+}
