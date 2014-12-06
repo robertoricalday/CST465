@@ -6,6 +6,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>About Page</h1>
     <p>
-        This is the about page of the website. Completion pending...
+        "This is the about page of the website. Completion pending..." - Roberto
     </p>
 </asp:Content>
