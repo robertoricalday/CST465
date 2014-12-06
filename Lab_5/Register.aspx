@@ -1,16 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Lab_5.Register" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Lab_5.Register" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Register Page</title>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h1>Register Page</h1>
+    <asp:CreateUserWizard MembershipProvider="SqlMembership" ContinueDestinationPageUrl="Login.aspx" runat="server"></asp:CreateUserWizard>
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:CreateUserWizard MembershipProvider="SqlMembership" ContinueDestinationPageUrl="Login.aspx" runat="server"></asp:CreateUserWizard>
-    </div>
-    </form>
-</body>
-</html>

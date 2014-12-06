@@ -10,6 +10,6 @@
 namespace Lab_5 {
     
     
-    public partial class Register {
+    public partial class Logout {
     }
 }

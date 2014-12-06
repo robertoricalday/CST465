@@ -1,6 +1,7 @@
-﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" Inherits="EditProfile" Codebehind="EditProfile.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" Inherits="EditProfile" Codebehind="EditProfile.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <title>Edit Profile Page</title>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -91,7 +92,10 @@
 
     <!--Submit Button-->
     <asp:Button runat="server" OnClick="Button_Click" ID="uxSubmit" Text="Save" />
+    <br />
+    <br />
 
+    <!--Error summary-->
     <asp:ValidationSummary HeaderText="Required Field Summary:" DisplayMode="BulletList" EnableClientScript="true" runat="server" />
 
     <asp:Literal ID="uxIsPostBack" runat="server"> </asp:Literal>

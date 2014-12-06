@@ -1,10 +1,11 @@
-﻿<%@ Page Title="View Your Profile" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" Inherits="ProfileSummary" Codebehind="ProfileSummary.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" Inherits="ProfileSummary" Codebehind="ProfileSummary.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <title>Profile Page</title>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <h1>Prifile View</h1>
+    <h1>Profile View</h1>
     <span class="fieldTitle">Name: </span><asp:Literal ID="uxName" runat="server"></asp:Literal>
     <br /><br />
     <span class="fieldTitle">Email Address: </span><asp:Literal ID="uxEmailAddress" runat="server"></asp:Literal>
