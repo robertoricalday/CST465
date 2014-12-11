@@ -2,18 +2,18 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Announcements Page</title>
+    <!--.js source-->
     <script type="text/javascript" src="JS/jquery-2.1.1.min.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Announcements Page</h1>
 
-    <asp:Label ID="uxNewAnnouncement" Text="Add new announcement" runat="server" />
+    <asp:Label ID="uxNewAnnouncement" Text="(+) Add new announcement" runat="server" />
 
     <asp:UpdatePanel ID="uxUpdatePanel" UpdateMode="Conditional" runat="server">
         <ContentTemplate>
             <div id="AddNewAnnouncement">
-
 
                 <asp:LoginView ID="LoginView" runat="server">
                     <%-- Message for non-registered users--%>
@@ -83,6 +83,6 @@
     </script>
 
     <!--Error Summary-->
-<%--    <asp:ValidationSummary HeaderText="Required Field Summary:" DisplayMode="BulletList" EnableClientScript="true" runat="server" />--%>
+    <asp:ValidationSummary HeaderText="Required Field Summary:" DisplayMode="BulletList" EnableClientScript="true" runat="server" />
 
 </asp:Content>
