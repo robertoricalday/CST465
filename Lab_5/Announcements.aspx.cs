@@ -51,7 +51,7 @@ namespace Lab_5
             }
 
             //refresh page
-            Response.Redirect("Announcements.aspx");
+            uxRepeater.DataBind();
         }
     }
 }

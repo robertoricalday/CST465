@@ -4,25 +4,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 
     <asp:ContentPlaceHolder ID="uxStyleSheet" runat="server">
-        <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+        <link rel="stylesheet" href="StyleSheet.css" type="text/css" runat="server"/>
     </asp:ContentPlaceHolder>
 
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+<%--        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>--%>
 
         <asp:SiteMapDataSource ID="SMS" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server" />
         <asp:Menu DataSourceID="SMS" runat="server"/>
         <br /><br />
         <asp:SiteMapPath PathSeparator=" / " runat="server"/>
+
+        <asp:ScriptManager ID="uxScriptManager" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/JS/jquery-2.1.1.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
     </div>
     </form>
 </body>

@@ -65,6 +65,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Account\Logout.aspx" />
     <Content Include="Forum.aspx" />
+    <Content Include="JS\jquery-2.1.1.min.js" />
     <Content Include="MasterPage.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
