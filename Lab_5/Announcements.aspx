@@ -12,7 +12,7 @@
 
     <asp:UpdatePanel ID="uxUpdatePanel" UpdateMode="Conditional" runat="server">
         <ContentTemplate>
-            <div id="AddAnnouncement">
+            <div id="AddNewAnnouncement">
 
 
                 <asp:LoginView ID="LoginView" runat="server">
